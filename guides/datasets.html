@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Coder Workspaces: Overview – DREAM Lab Coder Workspaces</title>
+<title>Shared Datasets – DREAM Lab Coder Workspaces</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,26 +23,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c98d9d0b3b0a085d3ddf71e6e91476d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-c98d9d0b3b0a085d3ddf71e6e91476d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -82,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">DREAM Lab Coder Workspaces</span>
     </a>
   </div>
@@ -98,23 +133,23 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-guides">    
         <li>
-    <a class="dropdown-item" href="./guides/getting-started.html">
+    <a class="dropdown-item" href="../guides/getting-started.html">
  <span class="dropdown-text">Getting Started</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./guides/file-transfer.html">
+    <a class="dropdown-item" href="../guides/file-transfer.html">
  <span class="dropdown-text">Transferring Files</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./guides/rstudio.html">
+    <a class="dropdown-item" href="../guides/rstudio.html">
  <span class="dropdown-text">Getting Started with RStudio</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./guides/marimo.html">
+    <a class="dropdown-item" href="../guides/marimo.html">
  <span class="dropdown-text">Using Marimo Notebooks</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./guides/ai-gateway.html">
+    <a class="dropdown-item" href="../guides/ai-gateway.html">
  <span class="dropdown-text">AI Gateway</span></a>
   </li>  
     </ul>
@@ -130,24 +165,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#getting-help" id="toc-getting-help" class="nav-link active" data-scroll-target="#getting-help">Getting Help</a></li>
-  <li><a href="#hardware-and-software" id="toc-hardware-and-software" class="nav-link" data-scroll-target="#hardware-and-software">Hardware and Software</a></li>
-  <li><a href="#workspace-lifecycle" id="toc-workspace-lifecycle" class="nav-link" data-scroll-target="#workspace-lifecycle">Workspace Lifecycle</a></li>
-  <li><a href="#policies" id="toc-policies" class="nav-link" data-scroll-target="#policies">Policies</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Coder Workspaces: Overview</h1>
+<h1 class="title">Shared Datasets</h1>
 </div>
 
 
@@ -164,166 +190,11 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Coder Workspaces are on-demand virtual machines with commonly used data science tools pre-installed. Anyone with a UCSB Net ID can create a workspace to use for the duration of the academic quarter. Workspaces are deleted at the end of each quarter. The service is managed by the <a href="https://www.library.ucsb.edu/dreamlab">Library DREAM Lab</a> and uses computing resources provided by the <a href="https://www.lsit.ucsb.edu">College of Letters and Science IT</a></p>
-<p>See our <a href="./guides/getting-started.html"><strong>Getting Started Guide</strong></a> for an introduction to using Coder Workspaces.</p>
-<section id="getting-help" class="level3">
-<h3 class="anchored" data-anchor-id="getting-help">Getting Help</h3>
-<p>For questions or support:</p>
-<ul>
-<li>Email: <a href="mailto:dreamlab@library.ucsb.edu" class="email">dreamlab@library.ucsb.edu</a></li>
-<li>Join the <a href="https://join.slack.com/t/ucsbcarpentry/shared_invite/zt-3chxqtb2b-cVc3l~yj1ghUhZLNmOLfhQ">UCSB Carpentry Slack</a></li>
-</ul>
-</section>
-<section id="hardware-and-software" class="level2">
-<h2 class="anchored" data-anchor-id="hardware-and-software">Hardware and Software</h2>
-<p>Each workspace is a virtual machine (running Ubuntu linux) with the following hardware:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: left;">Resources</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">CPU</td>
-<td style="text-align: left;">4 vCPUs</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Memory</td>
-<td style="text-align: left;">16 GiB</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">User Data Disk</td>
-<td style="text-align: left;">64 GB</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">OS Disk</td>
-<td style="text-align: left;">15 GB</td>
-</tr>
-</tbody>
-</table>
-<section id="default-software" class="level4">
-<h4 class="anchored" data-anchor-id="default-software">Default Software</h4>
-<p>All workspaces include the following software:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: left;">Name</th>
-<th style="text-align: left;">Version</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="https://ubuntu.com/">Ubuntu Linux</a></td>
-<td style="text-align: left;">24.04.4 LTS</td>
-<td style="text-align: left;">Operating System</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="https://docs.docker.com/get-started/">Docker</a></td>
-<td style="text-align: left;">29.3.1</td>
-<td style="text-align: left;">Container Runtime</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="https://pixi.sh/latest/">Pixi</a></td>
-<td style="text-align: left;">v0.65.0</td>
-<td style="text-align: left;">Python package manager</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="https://www.r-project.org/">R</a></td>
-<td style="text-align: left;">v4.5.3</td>
-<td style="text-align: left;">R programming language</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Git</td>
-<td style="text-align: left;">v2.43.0</td>
-<td style="text-align: left;">Version control software</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>gh</code></td>
-<td style="text-align: left;">v2.89.0</td>
-<td style="text-align: left;">Github CLI</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><code>jq</code></td>
-<td style="text-align: left;">v1.7</td>
-<td style="text-align: left;">Command line JSON processor</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>duckdb</code></td>
-<td style="text-align: left;">v1.5.0</td>
-<td style="text-align: left;">DuckDB command line tool</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><code>uv</code> / <code>uvx</code></td>
-<td style="text-align: left;">0.10.9</td>
-<td style="text-align: left;">Python package installer/runner</td>
-</tr>
-</tbody>
-</table>
-<p>Additional software may be installed using <a href="https://documentation.ubuntu.com/server/how-to/software/package-management/"><code>apt</code></a> or <a href="https://pixi.sh"><code>pixi</code></a>.</p>
-</section>
-<section id="optional-software" class="level4">
-<h4 class="anchored" data-anchor-id="optional-software">Optional Software</h4>
-<p>Services can be enabled when the workspace is created:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: left;">Service</th>
-<th style="text-align: left;">Version</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">RStudio Server</td>
-<td style="text-align: left;">v2026.01.1</td>
-<td style="text-align: left;">Run RStudio in the browser</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Jupyter Lab Server</td>
-<td style="text-align: left;">v4.4.9</td>
-<td style="text-align: left;">Run Jupyter Notebooks in the browser</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="https://github.com/coder/code-server">VS Code Web</a></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">Run VS Code in the browser</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="https://code.visualstudio.com/docs/remote/vscode-server">VS Code Desktop (Server)</a></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;">Connect to the workspace using VS Code</td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-<section id="workspace-lifecycle" class="level2">
-<h2 class="anchored" data-anchor-id="workspace-lifecycle">Workspace Lifecycle</h2>
-<ul>
-<li>Workspaces shut down (stop) after <strong>four hours</strong> of inactivity.</li>
-<li>You can manually <strong>stop</strong> a workspace by clicking the “stop” button.</li>
-<li>To <strong>start</strong> a stopped workspace, click the workspace’s “Start” button. It may take a few minutes to resume.</li>
-<li>Deleting a workspace deletes all files on the workspace!</li>
-<li>All workspaces will be deleted at the end of each academic quarter.</li>
-</ul>
-</section>
-<section id="policies" class="level2">
-<h2 class="anchored" data-anchor-id="policies">Policies</h2>
-<ul>
-<li><strong>Backup your data:</strong> Data is not backed up; users are responsible for their own backups.</li>
-<li><strong>Deletion:</strong> All workspaces are automatically deleted at the end of each quarter.</li>
-<li><strong>Limits:</strong> Users may create and use only one workspace at a time. Multiple active workspaces may be deleted without notice.</li>
-<li><strong>Maintenance:</strong> Workspaces may be inaccessible during scheduled maintenance windows (announced via email).</li>
-<li><strong>Inactivity:</strong> Workspaces stop automatically after four hours of inactivity to conserve resources. They can be resumed by clicking the “start” button.</li>
-<li><strong>Software Installation:</strong> Users may install additional software.</li>
-<li><strong>Access by Staff:</strong> Workspaces may be accessed by staff in the Library or LSIT. Confidential or sensitive information should not be stored.</li>
-</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install nfs-common</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> mkdir /mnt/datasets</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> mount 10.2.17.91:/mnt/datasets /mnt/datasets</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
